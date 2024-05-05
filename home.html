@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>BML School</title>
 </head>
+
 <body>
 
-    <header class="navBar">
-        <img src="img/shapes-bml/logo-bml/logo-bml-112x128-dark-purple.png" alt="logo_bmlschool">
-        <img src="img/menu.png" alt="iconMenu">
-    </header>
-    <article>
-        <ul>
-            <a href="about.html"><li>Conheça nosso time</li></a>
-            <a href="formContactUs.html"><li>Fale conosco</li></a>
-            <a href="formEnroll.html"><li>Matricule-se</li></a>
+    <header>
+        <img src="assets/svg/logo-bml-112x128-dark-purple.png" alt="logoBML">
+        <ul id="navBar" class="subtitleFont">
+            <li>Sobre nós</li>
+            <li>Blog</li>
+            <li>Matrícula</li>
+            <li>Fale conosco</li> <!-- link direciona para whatsapp -->
         </ul>
-    </article>
+    </header>
 
     <main>
-
-        <section>
-            <h1>APRENDA INGLÊS DO ZERO A FLUÊNCIA 100% ON-LINE</h1>
-        </section>
-
-        <section>
-            <article>
-                <h2>Título do card</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim exercitationem maiores eveniet quos, ut, facilis libero quas accusamus perferendis deleniti labore quidem nam id laborum officiis. Ut, culpa maxime.</p>
-            </article>
-            <article>
-                <h2>Título do card</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim exercitationem maiores eveniet quos, ut, facilis libero quas accusamus perferendis deleniti labore quidem nam id laborum officiis. Ut, culpa maxime.</p>
-            </article>
-            <article>
-                <h2>Título do card</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim exercitationem maiores eveniet quos, ut, facilis libero quas accusamus perferendis deleniti labore quidem nam id laborum officiis. Ut, culpa maxime.</p>
-            </article>
-        </section>
-
-        <section>
-
-        </section>
+        <div id="banner">
+            <img src="assets/img/mainBanner.jpeg" alt="Garoto segurando um notebook e sorrindo">
+            <h2 class="subtitleFont">Bem-vindo à BML School!</h2>
+        </div>
+        <div id="welcome">
+            <div id="titleWelcome">
+                <img src="assets/svg/icon-arrow-yellow.svg" alt="Arrow yelow">
+                <img src="assets/svg/dots-pink.svg" alt="dots pink">
+            </div>
+            <div id="pWelcome">
+                <p>
+                    Aqui, você encontrará uma experiência de aprendizado de inglês completamente personalizada. Nossas
+                    aulas online adaptam-se ao seu ritmo e necessidades, oferecendo um ensino dinâmico e envolvente.
+                    Quer você esteja começando do zero ou procurando aprimorar suas habilidades, nossa equipe de
+                    professores
+                    qualificados está pronta para ajudar. Conecte-se de onde estiver e conquiste a fluência com a BML
+                    School!
+                </p>
+            </div>
+            <div id="imgWelcome"><img src="assets/img/anim.jpeg" alt="anime"></div>
+        </div>
+        <div id="ourTeam">
+            <div id="titleOurTeam">
+                <img src="assets/svg/dots-purple.svg" alt="dots purple">
+                <h2>Conheça nosso time</h2>
+            </div>
+            <div id="teachers">
+                <div class="cards"><img src="assets/img/gabriel.jpeg" alt="teacher BML School"></div>
+                <div class="cards"><img src="assets/img/nicole.jpeg" alt="teacher BML School"></div>
+                <div class="cards"><img src="assets/img/marcela.jpeg" alt="teacher BML School"></div>
+                <div class="cards"><img src="assets/img/filiplic.jpeg" alt="teacher BML School"></div>
+                <div class="cards"><img src="assets/img/vinicius.jpeg" alt="teacher BML School"></div>
+            </div>
+        </div>
+        <div id="enroll">
+            <div id="titleEnroll">
+                <img src="assets/svg/icon-marker-yellow.svg" alt="icon marker yellow">
+                <h2>Quer estudar na BML?</h2>
+                <p>Preencha seus dados para que um de nossos especialistas entre em contato com você</p>
+                <img src="assets/svg/dots-yellow.svg" alt="dots yellow">
+            </div>
+            <form id="formEnroll">
+                <label for="name">Qual o seu nome?</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="email">
+                <label for="tel">Telefone</label>
+                <input type="tel">
+                <label for="name">Como conheceu nossa escola?</label>
+                <select name="meetUs" id="meetUs">
+                    <option value="Selecione" disabled>Selecione</option>
+                    <option value="indicate">Indicação</option>
+                    <option value="insta">Instagram</option>
+                    <option value="google">Google</option>
+                    <option value="bing">Bing</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <button id="submit">ENVIAR</button>
+                <p>Fique tranquilo, seus dados não serão compartilhados com ninguém.</p>
+            </form>
+        </div>
     </main>
+    <footer>
+        <img src="assets/svg/logo-bml-112x128-white.png" alt="logo BML School">
+        <ul>
+            <li><a href="">Curso de Inglês</a></li>
+            <li><a href="">Acesse nosso blog</a></li>
+            <li><a href="">Seja um de nossos professores</a></li>
+        </ul>
+        <ul>
+            <li>
+                <p>Suporte</p>
+            </li>
+            <li>
+                <p>Fale com a gente por Whatsapp:</p>
+            </li>
+            <li>
+                <p>(11) 9 98765 - 4321</p>
+            </li>
+        </ul>
+    </footer>
 
-
-
-    
 </body>
-<script src="script.js"></script>
+
 </html>
