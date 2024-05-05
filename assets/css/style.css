@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --dark-purple: #320361;
+    --light-white: #F9ECFD;
 }
+
+/* fontes */
 
 .subtitleFont {
     font-family: 'Abril Fatface', serif;
@@ -11,23 +14,113 @@
     color: var(--dark-purple);
 }
 
+.paragraphFont {
+    font-family: 'Mulish', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
 
-
-
+/* styles */
 
 * {
     margin: 0;
     padding: 0;
 }
 
-.navBar {
-
-    background-color: aqua;
+body {
     display: flex;
-    width: 100%;
-    height: 50px;
-    justify-content: space-between;
-
-    padding: 0.2rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-white);
 }
+
+header {
+    width: 100%;
+    height: 122px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#header {
+    display: flex;
+    width: 1225px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header ul {
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header img {
+    height: 90px;
+    width: 71px;
+}
+
+#banner img {
+    height: 621px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+#titleWelcome, #titleOurTeam{
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 50px;
+}
+
+#dotsPink {
+    height: 189px;
+    width: 278px;
+    position: absolute;
+    right: 300px;
+}
+
+#arrowYellow {
+    position: absolute;
+    left: 470px;
+}
+
+#pWelcome {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pWelcome p, #pWelcome img {
+    height: 510px;
+    width: 548.7px;
+}
+
+#pWelcome img {
+    border-radius: 100%;
+}
+
+#ourTeam{
+    height: 800px;
+}
+
+#dotsPurple {
+    height: 189px;
+    width: 278px;
+    position: absolute;
+    left: 300px;
+}
+
+#teachers {
+    display: flex;
+}
+
+.cards img{
+    height: 393px;
+    width: 393px;
+    position: absolute;
+    border-radius: 98px;
+}
+
 
