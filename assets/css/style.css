@@ -114,13 +114,42 @@ header {
 
 #teachers {
     display: flex;
+    position: relative;
 }
 
 .cards img{
     height: 393px;
     width: 393px;
-    position: absolute;
     border-radius: 98px;
+}
+
+.cards{
+    filter: blur(4px);
+    transition: 300ms linear; 
+}
+
+.cards:hover {
+    filter: blur(0px); 
+    z-index: 6;
+    transform: scale(1.05);
+}
+
+.card2 {
+    position: absolute;
+    left: 235px;
+}
+
+.card3{
+    position: absolute;
+    left: 470px;
+}
+.card4{
+    position: absolute;
+    left: 700px;
+}
+.card5{
+    position: absolute;
+    right: 0;
 }
 
 
