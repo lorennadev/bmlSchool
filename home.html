@@ -64,14 +64,14 @@
                 <p>Preencha seus dados para que um de nossos especialistas entre em contato com você</p>
                 <img src="assets/svg/dots-yellow.svg" alt="dots yellow">
             </div>
-            <form id="formEnroll">
+            <form action="https://formsubmit.co/loorena.alves96@gmail.com" method="POST" id="formEnroll">
                 <label for="name">Qual o seu nome?</label>
                 <input type="text">
                 <label for="email">Email</label>
                 <input type="email">
                 <label for="tel">Telefone</label>
                 <input type="tel">
-                <label for="name">Como conheceu nossa escola?</label>
+                <label for="select">Como conheceu nossa escola?</label>
                 <select name="meetUs" id="meetUs">
                     <option value="Selecione" disabled>Selecione</option>
                     <option value="indicate">Indicação</option>
@@ -80,8 +80,11 @@
                     <option value="bing">Bing</option>
                     <option value="outros">Outros</option>
                 </select>
-                <button id="submit">ENVIAR</button>
+                <button type="submit" id="submit">ENVIAR</button>
                 <p>Fique tranquilo, seus dados não serão compartilhados com ninguém.</p>
+                <input type="hidden" name="_subject" value="Novo contato!">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </main>
