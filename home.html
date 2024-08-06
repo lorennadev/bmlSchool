@@ -14,10 +14,9 @@
         <div id="header">
             <img src="assets/svg/logo-bml-112x128-dark-purple.png" alt="logoBML">
             <ul id="navBar" class="subtitleFont">
-                <li>Sobre nós</li>
-                <li>Blog</li>
-                <li>Matrícula</li>
-                <li>Fale conosco</li> <!-- link direciona para whatsapp -->
+                <a href="#titleWelcome"><li>Sobre nós</li></a>
+                <a href="#ourTeam"><li>Conheça nosso time</li></a>
+                <a href="#enroll"><li>Matrícula</li></a>
             </ul>
         </div>
     </header>
@@ -57,55 +56,41 @@
                 <div class="cards card5"><img src="assets/img/vinicius.jpeg" alt="teacher BML School"></div>
             </div>
         </div>
+
         <div id="enroll">
             <div id="titleEnroll">
                 <img src="assets/svg/icon-marker-yellow.svg" alt="icon marker yellow">
                 <h2 class="subtitleFont">Quer estudar na BML?</h2>
-                <p>Preencha seus dados para que um de nossos especialistas entre em contato com você</p>
-                <img src="assets/svg/dots-yellow.svg" alt="dots yellow">
+                <p class="paragraphFont">Entre em contato conosco via whatsapp, estamos disponíveis de segunda à sexta-feira das 8:00 às 18:00.<br>Aguardamos ansiosamente seu contato.</p>
+                <div class="botaoContato">
+                    <a id="linkBotao" href="https://wa.me/+5511941408125" target = "_blank" alt="whatsapp">
+                        <p id="txtContate">Contate-nos</p>
+                        <img id="iconwhatsapp" src="assets/svg/whatsapp.svg" alt="whatsapp">
+                    </a>
+                <div>
             </div>
-            <form action="https://formsubmit.co/loorena.alves96@gmail.com" method="POST" id="formEnroll">
-                <label for="name">Qual o seu nome?</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="tel">Telefone</label>
-                <input type="tel">
-                <label for="select">Como conheceu nossa escola?</label>
-                <select name="meetUs" id="meetUs">
-                    <option value="Selecione" disabled>Selecione</option>
-                    <option value="indicate">Indicação</option>
-                    <option value="insta">Instagram</option>
-                    <option value="google">Google</option>
-                    <option value="bing">Bing</option>
-                    <option value="outros">Outros</option>
-                </select>
-                <button type="submit" id="submit">ENVIAR</button>
-                <p>Fique tranquilo, seus dados não serão compartilhados com ninguém.</p>
-                <input type="hidden" name="_subject" value="Novo contato!">
-                <input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
         </div>
     </main>
-    <footer>
-        <img src="assets/svg/logo-bml-112x128-white.png" alt="logo BML School">
-        <ul>
-            <li><a href="">Curso de Inglês</a></li>
-            <li><a href="">Acesse nosso blog</a></li>
-            <li><a href="">Seja um de nossos professores</a></li>
-        </ul>
-        <ul>
-            <li>
-                <p>Suporte</p>
-            </li>
-            <li>
-                <p>Fale com a gente por Whatsapp:</p>
-            </li>
-            <li>
-                <p>(11) 9 98765 - 4321</p>
-            </li>
-        </ul>
+    <footer id="rodape">
+        <div id="support">
+            <img src="assets/svg/logo-bml-112x128-white.png" alt="logo BML School">
+            <ul>
+                <li><a href="">Curso de Inglês</a></li>
+                <li><a href="">Acesse nosso blog</a></li>
+                <li><a href="">Seja um de nossos professores</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Suporte</p>
+                </li>
+                <li>
+                    <p>Fale com a gente por Whatsapp:</p>
+                </li>
+                <li>
+                    <p>(11) 9 98765 - 4321</p>
+                </li>
+            </ul>
+        </div>
     </footer>
 <script src="/assets/js/"></script>
 </body>
