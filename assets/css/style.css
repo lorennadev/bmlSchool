@@ -3,6 +3,7 @@
 :root {
     --dark-purple: #320361;
     --light-white: #F9ECFD;
+    --yellow: #ffc400;
 }
 
 /* fontes */
@@ -10,15 +11,19 @@
 .subtitleFont {
     font-family: 'Abril Fatface', serif;
     font-weight: 400;
-    font-size: 36px;
-    color: var(--dark-purple);
+    font-size: 28px;
+    color: var(--dark-purple) !important;
 }
 
 .paragraphFont {
     font-family: 'Mulish', sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 400;
     text-align: center;
+}
+span{
+    font-weight: 650;
+    color: var(--yellow);
 }
 
 /* styles */
@@ -35,17 +40,21 @@ body {
     background-color: var(--light-white);
 }
 
+main {
+    padding: 0 400px !important;
+}
+
 header {
     width: 100%;
-    height: 122px;
-    box-shadow: 0px 0px 5px black;
+    height: 90px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
 #header {
     display: flex;
-    width: 1225px;
+    width: 1200px;
     justify-content: space-between;
     align-items: center;
 }
@@ -59,13 +68,17 @@ header {
 }
 
 #header img {
-    height: 90px;
-    width: 71px;
+    height: 60px;
+    width: 60px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
 }
 
 #banner img {
     height: 621px;
-    width: 100%;
     border-radius: 16px;
 }
 
@@ -90,11 +103,17 @@ header {
 #pWelcome {
     display: flex;
     justify-content: space-around;
+    padding: 40px 100px 0;
 }
 
-#pWelcome p, #pWelcome img {
-    height: 510px;
-    width: 548.7px;
+#pWelcome p {
+    height: 350px;
+    width: 500px;
+}
+
+#pWelcome img {
+    height: 350px;
+    width: 350px;
 }
 
 #pWelcome img {
@@ -102,7 +121,7 @@ header {
 }
 
 #ourTeam{
-    height: 800px;
+    height: 600px;
 }
 
 #dotsPurple {
@@ -114,76 +133,48 @@ header {
 
 #teachers {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 320px;
+}
+
+.textTeacher{
+    width: 210px;
     position: relative;
+    top: -130px;
+    text-align: justify;
+    background-color: #0000003a;
+    color: #FFF;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .cards img{
-    height: 393px;
-    width: 393px;
-    border-radius: 98px;
+    height: 320px;
+    width: 230px;
 }
 
 .cards{
-    filter: blur(4px);
     transition: 300ms linear; 
 }
 
 .cards:hover {
-    filter: blur(0px); 
-    z-index: 6;
     transform: scale(1.05);
 }
 
-.card2 {
-    position: absolute;
-    left: 235px;
-}
-
-.card3{
-    position: absolute;
-    left: 470px;
-}
-.card4{
-    position: absolute;
-    left: 700px;
-}
-.card5{
-    position: absolute;
-    right: 0;
-}
-
-.botaoContato {
-    background-color: green;
-    width: 350px;
-    height: 60px;
-    border-radius: 15px;
-    margin: 100px 0 100px 0;
-    transition: scale 1s;
-}
-
-.botaoContato:hover {
-    scale: 1.2;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-#txtContate {
-    font-family: 'Mulish', sans-serif;
-    font-size: 36px;
-    color: #000;
-}
-
-#linkBotao {
+#titleEnroll {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
 }
 
 #titleEnroll p.paragraphFont {
-    margin-top: 100px;
+    margin-top: 50px;
+}
 
+#titleEnroll h2{
+    margin-top: 40px;
 }
 
 #iconwhatsapp {
@@ -223,9 +214,363 @@ footer a:visited {
     color: #fff
 }
 
-#titleEnroll {
+/*
+Depoimentos
+*/
+#depoimentos{
+    margin: 60px 0 20px;
+    text-align: center;
+}
+
+#depoimentos h2{
+    margin-bottom: 20px;
+}
+
+.carrossel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: var(--light-white);
+    padding: 0 20px;
+}
+
+.slides {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 60px 0 60px 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.texto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.autor {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+.buttonDepoimentos {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.buttonDepoimentos:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contateButton {
+    margin: 30px;
+    height: 50px;
+    width: 180px;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: green;
+}
+
+#contateButton:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#titleEnroll button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*Tablet Paisagem e desktop pequenos */
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    .subtitleFont {
+        font-family: 'Abril Fatface', serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--dark-purple) !important;
+    }
+    
+    .paragraphFont {
+        font-family: 'Mulish', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main {
+        padding: auto;
+    }
+
+    #header {
+        width: 1025px;
+    }
+
+    #banner img {
+        height: auto;
+        width: 1025px;
+    }
+}
+
+/*Tablet Retrato*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .subtitleFont {
+        font-family: 'Abril Fatface', serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--dark-purple) !important;
+    }
+    
+    .paragraphFont {
+        font-family: 'Mulish', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main {
+        padding: auto;
+    }
+
+    #header {
+        width: 769px;
+    }
+
+    #banner img {
+        height: auto;
+        width: 769px;
+    }
+}
+
+/*Smartphone grande*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .subtitleFont {
+        font-family: 'Abril Fatface', serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--dark-purple) !important;
+    }
+    
+    .paragraphFont {
+        font-family: 'Mulish', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main {
+        padding: auto;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    #header {
+        width: 481px;
+    }
+
+    #header img {
+        height: 50px;
+        width: 50px;
+    }
+
+    #header ul {
+        width: 75%;
+    }
+
+    #banner img {
+        height: auto;
+        width: 481px;
+    }    
+}
+
+/* Smartphone pequeno */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .subtitleFont {
+        font-family: 'Abril Fatface', serif;
+        font-weight: 200;
+        font-size: 13px;
+        color: var(--dark-purple) !important;
+    }
+    
+    .paragraphFont {
+        font-family: 'Mulish', sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding: auto;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    #header {
+        width: 320px;
+    }
+
+    #header img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #header ul {
+        width: 75%;
+    }
+
+    #banner img {
+        height: auto;
+        width: 320px;
+    } 
+
+    #welcome {
+        width: 320px;
+    }
+    #pWelcome {
+        flex-direction: column;
+        width: 320px;
+    }
+    
+    #pWelcome p {
+        width: 320px;
+    }
+    
+    #pWelcome img {
+        width: 320px;
+    }
+
+    #ourTeam{
+        height: 600px;
+    }
+    
+    #dotsPurple {
+        height: 30px;
+        width: 60px;
+    }
+    
+    #teachers {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        height: 320px;
+    }
+    
+    .textTeacher{
+        width: 50px;
+        top: -80px;
+        padding: 2px;
+        font-size: 8px;
+    }
+    
+    .cards img{
+        height: 150px;
+        width: 54px;
+    }
+
+    #depoimentos{
+        margin: 10px 0 5px;
+    }
+    
+    #depoimentos h2{
+        margin-bottom: 10px;
+    }
+    
+    .carrossel {
+        position: relative;
+        max-width: 320px;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .texto {
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    .autor {
+        font-family: 'Mulish', sans-serif;
+        font-size: 13px;
+        color: #555;
+    }
+    
+    .buttonDepoimentos {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+    
+    .prev {
+        left: 5px;
+    }
+    
+    .next {
+        right: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    *{
+        display: none;
+    }
 }
