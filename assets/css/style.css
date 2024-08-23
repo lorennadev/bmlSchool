@@ -93,11 +93,14 @@ header {
     width: 278px;
     position: absolute;
     right: 300px;
+    display: none;
 }
 
 #arrowYellow {
     position: absolute;
     left: 470px;
+    display: none;
+
 }
 
 #pWelcome {
@@ -129,6 +132,7 @@ header {
     width: 278px;
     position: absolute;
     left: 300px;
+    display: none;
 }
 
 #teachers {
@@ -360,7 +364,7 @@ a {
     }
 
     main {
-        padding: auto;
+        padding: 0 !important;
     }
 
     #header {
@@ -439,15 +443,24 @@ a {
     }
 
     main {
-        padding: auto;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     header {
-        height: 50px;
+        height: 100px;
     }
 
     #header {
         width: 320px;
+        flex-direction: column;        
+
+    }
+
+    #navBar {
+        flex-direction: column;        
     }
 
     #header img {
@@ -487,6 +500,7 @@ a {
     #dotsPurple {
         height: 30px;
         width: 60px;
+        display: none;
     }
     
     #teachers {
@@ -510,6 +524,7 @@ a {
 
     #depoimentos{
         margin: 10px 0 5px;
+        width: 320px;
     }
     
     #depoimentos h2{
@@ -565,6 +580,25 @@ a {
     
     .next {
         right: 5px;
+    }
+
+    #pWelcome {
+        justify-content: space-around;
+        padding: 0;
+    }
+    
+    #pWelcome p {
+        height: 350px;
+        width: 320px;
+    }
+    
+    #pWelcome img {
+        height: 350px;
+        width: 350px;
+    }
+    
+    #pWelcome img {
+        border-radius: 100%;
     }
     
 }
